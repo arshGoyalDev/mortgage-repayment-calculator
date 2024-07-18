@@ -27,7 +27,6 @@
 *,
 *::before,
 *::after {
-  content: "";
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -57,10 +56,61 @@ a:active {
 /* ***************************** */
 
 body {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
   font-family: "Plus Jakarta Sans", sans-serif;
+  background: var(--slate-100);
 }
 
 /* ***************************** */
 /* main */
 /* ***************************** */
 
+
+.container {
+  width: 100vw;
+  background: var(--white);
+}
+
+/* form section */
+
+.form-section {
+  padding: 30px 20px;  
+}
+
+/* header */
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.heading {
+  color: var(--slate-900);
+}
+
+.clear-all {
+  position: relative;
+  color: var(--slate-700);
+  font-weight: 500;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.clear-all::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--slate-500);
+  opacity: 0.6;
+}
+
+.clear-all:hover {
+  color: var(--slate-900);
+}
