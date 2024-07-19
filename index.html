@@ -24,6 +24,35 @@
           <h1 class="heading">Mortgage Calculator</h1>
           <button class="clear-all">Clear All</button>
         </div>
+
+        <div class="form-container">
+          <form>
+            <div class="input-container">
+              <label for="mortgage-amount">Mortgage Amount</label>
+              <div>
+                <div>&#8356;</div>
+                <input type="number" id="mortgage-amount" min="0" />
+              </div>
+            </div>
+            <div class="term-interest-container">
+              <div class="input-container">
+                <label for="mortgage-term">Mortgage Term</label>
+                <div>
+                  <input type="number" id="mortgage-term" min="0" />
+                  <div>years</div>
+                </div>
+              </div>
+              <div class="input-container">
+                <label for="interest-rate">Interest Rate</label>
+                <div>
+                  <input type="number" id="interest-rate" min="0" />
+                  <div>&#37;</div>
+                </div>
+              </div>
+
+            </div>
+          </form>
+        </div>
       </section>
       <section class="result-section">
         <div class="empty-container">
