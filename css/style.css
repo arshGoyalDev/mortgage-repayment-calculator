@@ -37,6 +37,7 @@ input {
   font-family: inherit;
   border: 0;
   background: none;
+  font-weight: inherit;
 }
 
 button:active,
@@ -64,13 +65,24 @@ input[type="number"] {
 }
 
 /* ***************************** */
+/* globals */
+/* ***************************** */
+
+.hidden {
+  display: none !important;
+  /* opacity: 0;
+  visibility: none;
+  pointer-events: none; */
+}
+
+/* ***************************** */
 /* body */
 /* ***************************** */
 
 body {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  font-weight: 500;
   font-family: "Plus Jakarta Sans", sans-serif;
   background: var(--slate-100);
 }
@@ -106,7 +118,6 @@ body {
 .clear-all {
   position: relative;
   color: var(--slate-700);
-  font-weight: 500;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -214,6 +225,66 @@ body {
 }
 
 .empty-container p {
-  font-weight: 500;
   color: var(--slate-300);
+}
+
+/* ***************************** */
+/* result-container */
+/* ***************************** */
+
+.result-container {
+  padding: 30px 20px;
+}
+
+.heading-result {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.result-container > p {
+  color: var(--slate-300);
+}
+
+.results {
+  padding: 25px 20px;
+  background: rgba(0, 0, 0, 0.2);
+  border-top: 4px solid var(--lime);
+  border-radius: 10px;
+  margin-top: 25px;
+}
+
+.results div > p {
+  color: var(--slate-500);
+  margin-bottom: 10px;
+}
+
+.monthly-result {
+  margin-bottom: 10px;
+}
+
+.monthly-result div {
+  display: flex;
+  color: var(--lime);
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.monthly-result div p {
+  color: var(--lime);
+}
+
+.total-result {
+  padding-top: 20px;
+  border-top: 2px solid var(--slate-900);
+}
+
+.total-result div {
+  display: flex;
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 700; 
+}
+
+.total-result div p {
+  color: var(--white);
 }
