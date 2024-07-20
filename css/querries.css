@@ -35,6 +35,10 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .calculate-btn {
+    max-width: 280px;
+  }
+
 
   /* result section */
   .result-section {
@@ -71,7 +75,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 1080px;
-    height: 600px;
     max-width: 1080px;
   }
 

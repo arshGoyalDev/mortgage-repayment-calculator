@@ -277,6 +277,24 @@ body {
   visibility: visible;
 }
 
+.calculate-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-weight: 700;
+  color: var(--slate-900);
+  padding: 15px 20px;
+  background: var(--lime);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.calculate-btn:hover {
+  background: rgba(215, 218, 47, 0.6);
+}
+
 
 /* ***************************** */
 /* results */
