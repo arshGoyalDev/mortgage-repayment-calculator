@@ -201,6 +201,83 @@ body {
   background: var(--slate-100);
 }
 
+.mortgage-type-container > p {
+  color: var(--slate-700);
+  margin-bottom: 10px;
+}
+
+.mortgage-type-container div {
+  display: grid;
+  gap: 10px;
+}
+
+.mortgage-type {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 20px;
+  border: 2px solid var(--slate-300);
+  border-radius: 10px;
+}
+
+.mortgage-type p {
+  font-size: 18px;
+  color: var(--slate-900);
+  font-weight: 700;
+}
+
+.mortgage-type input {
+  display: grid;
+  place-content: center;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--slate-700);
+  border-radius: 50%;
+  margin: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  transition: 0.3s ease-in-out;
+}
+
+.mortgage-type input:checked {
+  border-color: var(--lime);
+}
+
+.mortgage-type input::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: var(--lime);
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+  transform: scale(0);
+}
+
+.mortgage-type input:checked::before {
+  transform: scale(1);
+}
+
+.mortgage-type input::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  border-radius: 10px;
+  border: 3px solid var(--lime);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.mortgage-type input:checked::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+
 /* ***************************** */
 /* results */
 /* ***************************** */
@@ -282,7 +359,7 @@ body {
   display: flex;
   color: var(--white);
   font-size: 24px;
-  font-weight: 700; 
+  font-weight: 700;
 }
 
 .total-result div p {
