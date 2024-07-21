@@ -33,6 +33,7 @@
                 <div>&#8356;</div>
                 <input type="number" id="mortgage-amount" min="0" />
               </div>
+              <p class="error-text hidden">The field is required</p>
             </div>
             <div class="term-interest-container">
               <div class="input-container">
@@ -41,6 +42,7 @@
                   <input type="number" id="mortgage-term" min="0" />
                   <div>years</div>
                 </div>
+                <p class="error-text hidden">The field is required</p>
               </div>
               <div class="input-container">
                 <label for="interest-rate">Interest Rate</label>
@@ -48,6 +50,7 @@
                   <input type="number" id="interest-rate" min="0" />
                   <div>&#37;</div>
                 </div>
+                <p class="error-text hidden">The field is required</p>
               </div>
             </div>
             <div class="mortgage-type-container">
@@ -62,6 +65,7 @@
                   <p>Interest Only</p>
                 </label>
               </div>
+              <p class="error-text hidden">The field is required</p>
             </div>
             <button class="calculate-btn">
               <img src="./assets/images/icon-calculator.svg" alt="calculator" />
@@ -71,7 +75,7 @@
         </div>
       </section>
       <section class="result-section">
-        <div class="empty-container">
+        <div class="empty-container hidden">
           <img
             src="./assets/images/illustration-empty.svg"
             alt="illustration-empty"
@@ -82,7 +86,7 @@
             monthly repayments would be.
           </p>
         </div>
-        <div class="result-container hidden">
+        <div class="result-container">
           <h2 class="heading-result">Your results</h2>
           <p>
             Your results are shown below based on the information you provided.
@@ -94,56 +98,19 @@
               <p>Your monthly repayments</p>
               <div>
                 <span>&#8356;</span>
-                <p>1,797.74</p>
+                <p>00.00</p>
               </div>
             </div>
             <div class="total-result">
               <p>Total you'll repay over the term</p>
               <div>
                 <span>&#8356;</span>
-                <p>539,322.94</p>
+                <p>00.00</p>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-
-    <!-- Mortgage Calculator
-  Clear All
-
-  Mortgage Amount
-
-  Mortgage Term
-
-  Interest Rate
-
-  Mortgage Type
-  Repayment
-  Interest Only
-
-  Calculate Repayments
-
-  Empty results start
-
-  Results shown here
-
-  Complete the form and click “calculate repayments” to see what 
-  your monthly repayments would be.
-
-  Empty results end
-
-  Completed results start
-
-  Your results
-
-  Your results are shown below based on the information you provided. 
-  To adjust the results, edit the form and click “calculate repayments” again.
-
-  Your monthly repayments
-
-  Total you'll repay over the term
- -->
-    <!-- Completed results end -->
   </body>
 </html>

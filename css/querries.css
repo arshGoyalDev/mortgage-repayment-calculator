@@ -3,7 +3,6 @@
 /* ***************************** */
 
 @media (min-width: 760px) {
-
   /* body */
   body {
     min-height: 100vh;
@@ -39,7 +38,6 @@
   .calculate-btn {
     max-width: 280px;
   }
-
 
   /* result section */
   .result-section {

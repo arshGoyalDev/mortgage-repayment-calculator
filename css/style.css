@@ -199,7 +199,7 @@ body {
   background: var(--slate-100);
 }
 
-.mortgage-type-container > p {
+.mortgage-type-container p:first-child {
   color: var(--slate-700);
   margin-bottom: 10px;
 }
@@ -207,6 +207,7 @@ body {
 .mortgage-type-container div {
   display: grid;
   gap: 10px;
+  margin-bottom: 10px;
 }
 
 .mortgage-type {
@@ -249,7 +250,7 @@ body {
 }
 
 .mortgage-type input::before {
-  content: '';
+  content: "";
   width: 10px;
   height: 10px;
   background: var(--lime);
@@ -263,7 +264,7 @@ body {
 }
 
 .mortgage-type input::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -3px;
   left: -2px;
@@ -299,6 +300,21 @@ body {
   background: rgba(215, 218, 47, 0.6);
 }
 
+/* errors */
+
+.input-container > div.error {
+  border-color: var(--red);
+}
+
+.input-container div.error div {
+  color: var(--white);
+  background: var(--red);
+}
+
+.error-text {
+  font-size: 14px;
+  color: var(--red);
+}
 
 /* ***************************** */
 /* results */
