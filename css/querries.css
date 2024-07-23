@@ -2,24 +2,24 @@
 /* tablet */
 /* ***************************** */
 
-@media (min-width: 760px) {
+@media (min-width: 48rem) {
   /* body */
   body {
     min-height: 100vh;
     place-content: center;
-    padding: 50px;
+    padding: 3rem;
   }
 
   /* container */
   .container {
-    max-width: 800px;
-    border-radius: 20px;
-    box-shadow: 0 0 160px rgba(0, 0, 0, 0.2);
+    max-width: 50rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.1);
   }
 
   /* form section */
   .form-section {
-    padding: 40px;
+    padding: 2.5rem;
   }
 
   /* header */
@@ -36,56 +36,56 @@
   }
 
   .calculate-btn {
-    max-width: 280px;
+    max-width: 17.5rem;
   }
 
   /* result section */
   .result-section {
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 1.25rem 1.25rem;
   }
 
   /* result-container */
   .result-container {
-    padding: 40px;
+    padding: 2.5rem;
   }
 
   .results {
-    padding: 30px 35px;
-    margin-top: 40px;
+    padding: 2rem 2.25rem;
+    margin-top: 2.5rem;
   }
 
   .monthly-result {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
 
   .monthly-result div {
-    font-size: 60px;
+    font-size: 3.75rem;
   }
 
   .total-result {
-    padding-top: 30px;
+    padding-top: 2rem;
     border-top: 2px solid var(--slate-700);
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 69rem) {
   /* container */
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 1080px;
-    max-width: 1080px;
+    width: 67.5rem;
+    max-width: 67.5rem;
   }
 
   /* result section */
   .result-section {
-    border-radius: 0 20px 20px 80px;
+    border-radius: 0 1.25rem 1.25rem  5rem;
   }
 
   /* empty container */
   .empty-container {
     justify-content: center;
     height: 100%;
-    padding: 40px;
+    padding: 2.5rem;
   }
 }

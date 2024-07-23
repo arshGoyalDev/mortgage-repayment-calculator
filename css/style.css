@@ -97,7 +97,7 @@ body {
 /* form section */
 
 .form-section {
-  padding: 30px 20px;
+  padding: 2rem 1.25rem;
 }
 
 /* header */
@@ -106,7 +106,7 @@ body {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  gap: 15px;
+  gap: 1rem;
 }
 
 .heading {
@@ -138,19 +138,19 @@ body {
 /* form  */
 
 .form-container {
-  margin-top: 30px;
+  margin-top: 2rem;
 }
 
 .form-container form {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 1.5rem;
 }
 
 .input-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 .input-container label {
@@ -161,7 +161,7 @@ body {
 .input-container > div {
   display: flex;
   border: 2px solid var(--slate-300);
-  border-radius: 8px;
+  border-radius: 0.5rem;
   transition: 0.3s;
   cursor: pointer;
   overflow: hidden;
@@ -173,14 +173,14 @@ body {
 
 .term-interest-container {
   display: grid;
-  gap: 25px;
+  gap: 1.5rem;
 }
 
 .input-container input {
   width: 100%;
   color: var(--slate-900);
   font-weight: 700;
-  padding: 15px;
+  padding: 1rem;
 }
 
 .input-container input:active,
@@ -195,29 +195,29 @@ body {
   align-items: center;
   color: var(--slate-700);
   font-weight: 700;
-  padding: 10px 18px;
+  padding: 0.625rem 1.125rem;
   background: var(--slate-100);
 }
 
 .mortgage-type-container p:first-child {
   color: var(--slate-700);
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .mortgage-type-container div {
   display: grid;
-  gap: 10px;
-  margin-bottom: 10px;
+  gap: 0.625rem;
+  margin-bottom: 0.625rem;
 }
 
 .mortgage-type {
   position: relative;
   display: flex;
   align-items: center;
-  gap: 20px;
-  padding: 15px 20px;
+  gap: 1.25rem;
+  padding: 1rem 1.25rem;
   border: 3px solid var(--slate-300);
-  border-radius: 10px;
+  border-radius: 0.625rem;
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -227,7 +227,7 @@ body {
 }
 
 .mortgage-type p {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: var(--slate-900);
   font-weight: 700;
 }
@@ -235,8 +235,8 @@ body {
 .mortgage-type input {
   display: grid;
   place-content: center;
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   border: 2px solid var(--slate-700);
   border-radius: 50%;
   margin: 0;
@@ -251,8 +251,8 @@ body {
 
 .mortgage-type input::before {
   content: "";
-  width: 10px;
-  height: 10px;
+  width: 0.625rem;
+  height: 0.625rem;
   background: var(--lime);
   border-radius: 50%;
   transition: 0.3s ease-in-out;
@@ -286,12 +286,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 1rem;
   color: var(--slate-900);
   font-weight: 700;
-  padding: 15px 20px;
+  padding: 1rem 1.25rem;
   background: var(--lime);
-  border-radius: 100px;
+  border-radius: 6.25rem;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
@@ -333,9 +333,9 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
   color: white;
-  padding: 40px;
+  padding: 2.5rem;
   text-align: center;
 }
 
@@ -348,12 +348,12 @@ body {
 /* ***************************** */
 
 .result-container {
-  padding: 30px 20px;
+  padding: 2rem 1.25rem;
 }
 
 .heading-result {
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .result-container > p {
@@ -361,26 +361,26 @@ body {
 }
 
 .results {
-  padding: 25px 20px;
+  padding: 1.5rem 1.25rem;
   background: rgba(0, 0, 0, 0.2);
-  border-top: 4px solid var(--lime);
-  border-radius: 10px;
-  margin-top: 25px;
+  border-top: 0.25rem solid var(--lime);
+  border-radius: 0.625rem;
+  margin-top: 1.5rem;
 }
 
 .results div > p {
   color: var(--slate-500);
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .monthly-result {
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .monthly-result div {
   display: flex;
   color: var(--lime);
-  font-size: 50px;
+  font-size: 3.125rem;
   font-weight: 700;
 }
 
@@ -389,14 +389,14 @@ body {
 }
 
 .total-result {
-  padding-top: 20px;
+  padding-top: 1.25rem;
   border-top: 2px solid var(--slate-900);
 }
 
 .total-result div {
   display: flex;
   color: var(--white);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
