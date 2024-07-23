@@ -13,16 +13,16 @@ calculateBtn.addEventListener("click", (e) => {
 
   checkForError();
 
-  // if (!errorAmount && !errorYear && !errorInterest && !errorType) {
-  //   calculateMortgage();
-  // }
+  if (!errorAmount && !errorYear && !errorInterest && !errorType) {
+    calculateMortgage();
+  }
 });
 
 // func() to Calculate mortgage
 
-// const calculateMortgage = function() {
-//   console.log("calculated");
-// }
+const calculateMortgage = function() {
+  console.log("calculated");
+}
 
 // Errors
 
