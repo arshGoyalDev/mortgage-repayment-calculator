@@ -4,7 +4,7 @@ const amountInput = document.querySelector("#mortgage-amount");
 const termInput = document.querySelector("#mortgage-term");
 const interestInput = document.querySelector("#interest-rate");
 const repaymentRadio = document.querySelector("#repayment");
-const interestRadio = document.querySelector("interest");
+const interestRadio = document.querySelector("#interest");
 
 const calculateBtn = document.querySelector(".calculate-btn");
 
@@ -13,32 +13,47 @@ calculateBtn.addEventListener("click", (e) => {
 
   checkForError();
 
-  // calculateMortgage();
+  // if (!errorAmount && !errorYear && !errorInterest && !errorType) {
+  //   calculateMortgage();
+  // }
 });
+
+// func() to Calculate mortgage
+
+// const calculateMortgage = function() {
+//   console.log("calculated");
+// }
 
 // Errors
 
 let errorAmount = false;
 let errorYear = false;
-let errorMonth = false;
+let errorInterest = false;
 let errorType = false;
 
 const checkForError = function () {
+  // mortgage amount
   Number(amountInput.value) === 0
     ? (toggleError(true, amountInput), (errorAmount = true))
     : (toggleError(false, amountInput), (errorAmount = false));
 
-    Number(termInput.value) === 0
-    ? (toggleError(true, termInput), (errorAmount = true))
-    : (toggleError(false, termInput), (errorAmount = false));
+  // mortgage term
+  Number(termInput.value) === 0
+    ? (toggleError(true, termInput), (errorYear = true))
+    : (toggleError(false, termInput), (errorYear = false));
 
-    Number(interestInput.value) === 0
-    ? (toggleError(true, interestInput), (errorAmount = true))
-    : (toggleError(false, interestInput), (errorAmount = false));
+  // mortgage interest
+  Number(interestInput.value) === 0
+    ? (toggleError(true, interestInput), (errorInterest = true))
+    : (toggleError(false, interestInput), (errorInterest = false));
 
-  };
+  // mortgage type
+  !repaymentRadio.checked && !interestRadio.checked
+    ? (toggleError(true, repaymentRadio.parentElement), (errorType = true))
+    : (toggleError(false, repaymentRadio.parentElement), (errorType = false));
+};
 
-// toggle Error
+// Toggle Error
 
 const toggleError = function (showError, input) {
   if (showError) {
@@ -49,3 +64,4 @@ const toggleError = function (showError, input) {
     input.parentElement.nextElementSibling.classList.add("hidden"); // console.log("error")
   }
 };
+
