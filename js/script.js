@@ -20,6 +20,9 @@ calculateBtn.addEventListener("click", (e) => {
 
 // func() to Calculate mortgage
 
+const emptyContainer = document.querySelector(".empty-container");
+const resultContainer = document.querySelector(".result-container");
+
 const monthlyDisplay = document.querySelector(".monthly-display");
 const totalDisplay = document.querySelector(".total-display");
 
@@ -36,6 +39,9 @@ const calculateMortgage = function () {
     (1 - Math.pow(1 + monthlyInterest, -months));
 
   const totalPayment = monthlyPayment * months;
+
+  emptyContainer.classList.add("hidden");
+  resultContainer.classList.remove("hidden");
 
   if (repaymentRadio.checked) {
     monthlyDisplay.textContent = monthlyPayment.toFixed(2);
