@@ -105,9 +105,9 @@ const checkForError = function () {
 const toggleError = function (showError, input) {
   if (showError) {
     input.parentElement.classList.add("error");
-    input.parentElement.nextElementSibling.classList.remove("hidden"); // console.log("error")
+    input.parentElement.nextElementSibling.classList.remove("hidden");
   } else {
     input.parentElement.classList.remove("error");
-    input.parentElement.nextElementSibling.classList.add("hidden"); // console.log("error")
+    input.parentElement.nextElementSibling.classList.add("hidden");
   }
 };
