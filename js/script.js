@@ -20,9 +20,34 @@ calculateBtn.addEventListener("click", (e) => {
 
 // func() to Calculate mortgage
 
-const calculateMortgage = function() {
-  console.log("calculated");
-}
+const monthlyDisplay = document.querySelector(".monthly-display");
+const totalDisplay = document.querySelector(".total-display");
+
+const calculateMortgage = function () {
+  const mortgageAmount = amountInput.value;
+  const mortgageTerm = termInput.value;
+  const interestRate = interestInput.value;
+
+  const monthlyInterest = interestRate / (100 * 12);
+  const months = mortgageTerm * 12;
+
+  const monthlyPayment =
+    (mortgageAmount * monthlyInterest) /
+    (1 - Math.pow(1 + monthlyInterest, -months));
+
+  const totalPayment = monthlyPayment * months;
+
+  if (repaymentRadio.checked) {
+    monthlyDisplay.textContent = monthlyPayment.toFixed(2);
+    totalDisplay.textContent = totalPayment.toFixed(2);
+  } else {
+    monthlyDisplay.textContent = (
+      monthlyPayment -
+      mortgageAmount / months
+    ).toFixed(2);
+    totalDisplay.textContent = (totalPayment - mortgageAmount).toFixed(2);
+  }
+};
 
 // Errors
 
@@ -64,4 +89,3 @@ const toggleError = function (showError, input) {
     input.parentElement.nextElementSibling.classList.add("hidden"); // console.log("error")
   }
 };
-
