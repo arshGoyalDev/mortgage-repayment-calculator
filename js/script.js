@@ -55,6 +55,22 @@ const calculateMortgage = function () {
   }
 };
 
+// Clear Btn
+
+const clearAllBtn = document.querySelector(".clear-all");
+
+clearAllBtn.addEventListener("click", () => {
+  emptyContainer.classList.remove("hidden");
+  resultContainer.classList.add("hidden");
+
+  amountInput.value = "";
+  termInput.value = "";
+  interestInput.value = "";
+
+  repaymentRadio.checked = false;
+  interestRadio.checked = false;
+});
+
 // Errors
 
 let errorAmount = false;
